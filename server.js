@@ -5,8 +5,8 @@ const cors = require('cors');
 admin.initializeApp({
   credential: admin.credential.cert({
     projectId: 'deensphere-175d5',
-    clientEmail: 'PASTE_CLIENT_EMAIL_HERE',
-    privateKey: 'PASTE_PRIVATE_KEY_HERE'
+    clientEmail: 'firebase-adminsdk-fbsvc@deensphere-175d5.iam.gserviceaccount.com',
+    privateKey: 're_ighSupGH_AD7nnC83TDS4XnSaDFHfhtz3'
   })
 });
 
@@ -26,7 +26,7 @@ app.post('/send-reset', async (req, res) => {
     const r = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: {
-        'Authorization': 'Bearer PASTE_RESEND_API_KEY_HERE',
+        'Authorization': 're_ighSupGH_AD7nnC83TDS4XnSaDFHfhtz3',
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
