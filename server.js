@@ -26,7 +26,7 @@ app.post('/send-reset', async (req, res) => {
     const r = await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: {
-        'Authorization': 'Bearer re_2MmZ1oTH_9RXu5D9wN6Xxdgc3N8LmVBm4',
+        'Authorization': 'Bearer re_re_2hne3Lbm_3bdd19uv4BjnUoZvRJVrQ6Jk',
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
