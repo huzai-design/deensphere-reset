@@ -30,7 +30,7 @@ app.post('/send-reset', async (req, res) => {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        from: 'DeenSphere <onboarding@resend.dev>',
+        from: 'DeenSphere <noreply@mail.deensphere.com>',
         to: email,
         subject: 'Reset your DeenSphere password',
         html: '<div style="font-family:sans-serif;max-width:500px;margin:auto;padding:24px;">' +
