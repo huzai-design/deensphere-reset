@@ -20,7 +20,7 @@ app.post('/send-reset', async (req, res) => {
 
   try {
     const link = await admin.auth().generatePasswordResetLink(email, {
-      url: 'https://deensphere-175d5.web.app/'
+      url: 'https://deensphere-175d5.firebaseapp.com'
     });
 
     const r = await fetch('https://api.resend.com/emails', {
